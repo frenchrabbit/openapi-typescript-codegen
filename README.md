@@ -1,5 +1,7 @@
 # OpenAPI Typescript Codegen
 
+## Fork while https://github.com/ferdikoomen/openapi-typescript-codegen/pull/1260 is WIP
+
 [![NPM][npm-image]][npm-url]
 [![License][license-image]][license-url]
 [![Coverage][coverage-image]][coverage-url]
