@@ -3,24 +3,35 @@
 {{#if imports}}
 
 {{#each imports}}
+{{#equals this 'DateISO'}}
 import type { {{{this}}} } from './{{{this}}}';
+{{else equals this 'MongoObjectId'}}
+import type { {{{this}}} } from './{{{this}}}';
+{{else}}
+{{#endsWith this 'Nest'}}
+import type { {{{this}}} } from './{{{this}}}';
+{{else}}
+import type { {{{this}}} } from '../models/{{{this}}}';
+{{/endsWith}}
+{{/equals}}
 {{/each}}
 {{/if}}
 
 {{#equals export 'interface'}}
+// interface
 {{>exportInterface}}
 {{else equals export 'one-of'}}
+// one-of
 {{>exportComposition}}
 {{else equals export 'any-of'}}
+// any-of
 {{>exportComposition}}
 {{else equals export 'all-of'}}
+// all-of
 {{>exportComposition}}
 {{else equals export 'enum'}}
-{{#if @root.useUnionTypes}}
-{{>exportType}}
-{{else}}
 {{>exportEnum}}
-{{/if}}
 {{else}}
+// ELSE EXPORT TYPE
 {{>exportType}}
 {{/equals}}

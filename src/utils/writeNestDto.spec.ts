@@ -6,11 +6,11 @@ import { Indent } from '../Indent';
 import { writeFile } from './fileSystem';
 import type { Templates } from './registerHandlebarTemplates';
 import { writeClientModels } from './writeClientModels';
-import { writeClientNestDto } from "./writeClientNestDto";
+import { writeNestDto } from "./writeNestDto";
 
 jest.mock('./fileSystem');
 
-describe('writeClientNestDto', () => {
+describe('writeNestDto', () => {
     it('should write to filesystem', async () => {
         const models: Model[] = [
             {
@@ -53,8 +53,8 @@ describe('writeClientNestDto', () => {
             },
         };
 
-        await writeClientNestDto(models, templates, '/', Indent.SPACE_2);
+        await writeNestDto(models, templates, '/', Indent.SPACE_2);
 
-        expect(writeFile).toBeCalledWith('/User.dto.ts', `nestDto${EOL}`);
+        expect(writeFile).toBeCalledWith('/UserNest.ts', `nestDto${EOL}`);
     });
 });

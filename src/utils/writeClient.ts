@@ -13,6 +13,7 @@ import { writeClientIndex } from './writeClientIndex';
 import { writeClientModels } from './writeClientModels';
 import { writeClientSchemas } from './writeClientSchemas';
 import { writeClientServices } from './writeClientServices';
+import { writeNestDto } from "./writeNestDto";
 
 /**
  * Write our OpenAPI client, using the given templates at the given output
@@ -51,6 +52,7 @@ export const writeClient = async (
     const outputPath = resolve(process.cwd(), output);
     const outputPathCore = resolve(outputPath, 'core');
     const outputPathModels = resolve(outputPath, 'models');
+    const outputPathNestDto = resolve(outputPath, 'dto');
     const outputPathSchemas = resolve(outputPath, 'schemas');
     const outputPathServices = resolve(outputPath, 'services');
 
@@ -90,6 +92,9 @@ export const writeClient = async (
         await rmdir(outputPathModels);
         await mkdir(outputPathModels);
         await writeClientModels(client.models, templates, outputPathModels, httpClient, useUnionTypes, indent);
+        await rmdir(outputPathNestDto);
+        await mkdir(outputPathNestDto);
+        await writeNestDto(client.models, templates, outputPathNestDto, indent);
     }
 
     if (isDefined(clientName)) {

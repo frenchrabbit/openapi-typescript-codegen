@@ -29,6 +29,7 @@ const handlebarsPlugin = () => ({
                 knownHelpers: {
                     ifdef: true,
                     equals: true,
+                    endsWith: true,
                     notEquals: true,
                     containsSpaces: true,
                     union: true,

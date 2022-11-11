@@ -21,6 +21,7 @@ describe('writeClientClass', () => {
             client: () => 'client',
             exports: {
                 model: () => 'model',
+                nestDto: () => 'nestDto',
                 schema: () => 'schema',
                 service: () => 'service',
             },

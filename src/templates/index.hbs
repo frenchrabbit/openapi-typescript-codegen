@@ -20,13 +20,27 @@ export type { OpenAPIConfig } from './core/OpenAPI';
 {{#if @root.useUnionTypes}}
 export type { {{{name}}} } from './models/{{{name}}}';
 {{else if enum}}
-export { {{{name}}} } from './models/{{{name}}}';
+export { {{{name}}}, descr{{{name}}} } from './models/{{{name}}}';
 {{else if enums}}
 export { {{{name}}} } from './models/{{{name}}}';
 {{else}}
 export type { {{{name}}} } from './models/{{{name}}}';
 {{/if}}
 {{/each}}
+
+// Nest Dto for Implements
+{{#each models}}
+{{#if @root.useUnionTypes}}
+export type { {{{name}}}Nest } from './dto/{{{name}}}Nest';
+{{else if enum}}
+{{!-- export { {{{name}}}Nest } from './dto/{{{name}}}Nest'; --}}
+{{else if enums}}
+export { {{{name}}}Nest } from './dto/{{{name}}}Nest';
+{{else}}
+export type { {{{name}}}Nest } from './dto/{{{name}}}Nest';
+{{/if}}
+{{/each}}
+
 {{/if}}
 {{/if}}
 {{#if @root.exportSchemas}}

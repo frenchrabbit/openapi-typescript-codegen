@@ -539,6 +539,871 @@ export const request = <T>(config: OpenAPIConfig, options: ApiRequestOptions): C
 "
 `;
 
+exports[`v2 should generate: ./test/generated/v2/dto/ArrayWithArrayNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithStringNest } from './ModelWithStringNest';
+
+// ELSE EXPORT TYPE
+/**
+ * This is a simple array containing an array
+ */
+export type ArrayWithArrayNest = Array<Array<ModelWithString>>;
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/ArrayWithBooleansNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a simple array with booleans
+ */
+export type ArrayWithBooleansNest = Array<boolean>;
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/ArrayWithNumbersNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a simple array with numbers
+ */
+export type ArrayWithNumbersNest = Array<number>;
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/ArrayWithPropertiesNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a simple array with properties
+ */
+export type ArrayWithPropertiesNest = Array<{
+    foo?: string;
+    bar?: string;
+}>;
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/ArrayWithReferencesNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithStringNest } from './ModelWithStringNest';
+
+// ELSE EXPORT TYPE
+/**
+ * This is a simple array with references
+ */
+export type ArrayWithReferencesNest = Array<ModelWithStringNest>;
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/ArrayWithStringsNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a simple array with strings
+ */
+export type ArrayWithStringsNest = Array<string>;
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/CommentWithBackticksNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * Testing backticks in string: \`backticks\` and \`\`\`multiple backticks\`\`\` should work
+ */
+export type CommentWithBackticksNest = number;
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/CommentWithBreaksNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * Testing multiline comments in string: First line
+ * Second line
+ *
+ * Fourth line
+ */
+export type CommentWithBreaksNest = number;
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/CommentWithExpressionPlaceholdersNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * Testing expression placeholders in string: \${expression} should work
+ */
+export type CommentWithExpressionPlaceholdersNest = number;
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/CommentWithQuotesNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * Testing quotes in string: 'single quote''' and \\"double quotes\\"\\"\\" should work
+ */
+export type CommentWithQuotesNest = number;
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/CommentWithReservedCharactersNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * Testing reserved characters in string: * inline * and ** inline ** should work
+ */
+export type CommentWithReservedCharactersNest = number;
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/CommentWithSlashesNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * Testing slashes in string: \\\\backwards\\\\\\\\\\\\ and /forwards/// should work
+ */
+export type CommentWithSlashesNest = number;
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/DateNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a type-only model that defines Date as a string
+ */
+export type DateNest = string;
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/DictionaryWithArrayNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithStringNest } from './ModelWithStringNest';
+
+// ELSE EXPORT TYPE
+/**
+ * This is a complex dictionary
+ */
+export type DictionaryWithArrayNest = Record<string, Array<ModelWithString>>;
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/DictionaryWithDictionaryNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a string dictionary
+ */
+export type DictionaryWithDictionaryNest = Record<string, Record<string, string>>;
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/DictionaryWithPropertiesNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a complex dictionary
+ */
+export type DictionaryWithPropertiesNest = Record<string, {
+    foo?: string;
+    bar?: string;
+}>;
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/DictionaryWithReferenceNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithStringNest } from './ModelWithStringNest';
+
+// ELSE EXPORT TYPE
+/**
+ * This is a string reference
+ */
+export type DictionaryWithReferenceNest = Record<string, ModelWithStringNest>;
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/DictionaryWithStringNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a string dictionary
+ */
+export type DictionaryWithStringNest = Record<string, string>;
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/EnumFromDescriptionNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * Success=1,Warning=2,Error=3
+ */
+export type EnumFromDescriptionNest = number;
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/EnumWithExtensionsNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+/**
+ * This is a simple enum with numbers
+ */
+export enum EnumWithExtensionsNest {
+    /**
+     * Used when the status of something is successful
+     */
+    CUSTOM_SUCCESS = 200,
+    /**
+     * Used when the status of something has a warning
+     */
+    CUSTOM_WARNING = 400,
+    /**
+     * Used when the status of something has an error
+     */
+    CUSTOM_ERROR = 500,
+}
+
+/**
+ * Возвращает описание для элемента enum
+ * This is a simple enum with numbers
+ * @param {EnumWithExtensionsNest} val Значение из EnumWithExtensionsNest
+ * @return {string} описание для значения
+ */
+export const descrEnumWithExtensionsNest = (val: EnumWithExtensionsNest):string => {
+    switch (val) {
+        case 200:
+        return 'Used when the status of something is successful'
+        case 400:
+        return 'Used when the status of something has a warning'
+        case 500:
+        return 'Used when the status of something has an error'
+        default:
+        return ''
+    }
+}
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/EnumWithNumbersNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+/**
+ * This is a simple enum with numbers
+ */
+export enum EnumWithNumbersNest {
+    '_1' = 1,
+    '_2' = 2,
+    '_3' = 3,
+    '_1.1' = 1.1,
+    '_1.2' = 1.2,
+    '_1.3' = 1.3,
+    '_100' = 100,
+    '_200' = 200,
+    '_300' = 300,
+    '_-100' = -100,
+    '_-200' = -200,
+    '_-300' = -300,
+    '_-1.1' = -1.1,
+    '_-1.2' = -1.2,
+    '_-1.3' = -1.3,
+}
+
+/**
+ * Возвращает описание для элемента enum
+ * This is a simple enum with numbers
+ * @param {EnumWithNumbersNest} val Значение из EnumWithNumbersNest
+ * @return {string} описание для значения
+ */
+export const descrEnumWithNumbersNest = (val: EnumWithNumbersNest):string => {
+    switch (val) {
+        default:
+        return ''
+    }
+}
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/EnumWithStringsNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+/**
+ * This is a simple enum with strings
+ */
+export enum EnumWithStringsNest {
+    SUCCESS = 'Success',
+    WARNING = 'Warning',
+    ERROR = 'Error',
+    _SINGLE_QUOTE_ = '\\\\'Single Quote\\\\'',
+    _DOUBLE_QUOTES_ = '\\"Double Quotes\\"',
+}
+
+/**
+ * Возвращает описание для элемента enum
+ * This is a simple enum with strings
+ * @param {EnumWithStringsNest} val Значение из EnumWithStringsNest
+ * @return {string} описание для значения
+ */
+export const descrEnumWithStringsNest = (val: EnumWithStringsNest):string => {
+    switch (val) {
+        default:
+        return ''
+    }
+}
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/ModelThatExtendsExtendsNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelThatExtendsNest } from './ModelThatExtendsNest';
+import type { ModelWithStringNest } from './ModelWithStringNest';
+
+// all-of
+/**
+ * This is a model that extends another model
+ */
+export type ModelThatExtendsExtendsNest = (ModelWithStringNest & ModelThatExtendsNest & {
+    propExtendsC?: string;
+    propExtendsD?: ModelWithStringNest;
+});
+
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/ModelThatExtendsNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithStringNest } from './ModelWithStringNest';
+
+// all-of
+/**
+ * This is a model that extends another model
+ */
+export type ModelThatExtendsNest = (ModelWithStringNest & {
+    propExtendsA?: string;
+    propExtendsB?: ModelWithStringNest;
+});
+
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/ModelWithArrayNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithStringNest } from './ModelWithStringNest';
+
+// interface
+/**
+ * This is a model with one property containing an array
+ */
+export type ModelWithArrayNest = {
+    prop?: Array<ModelWithStringNest>;
+    propWithFile?: Array<Blob>;
+    propWithNumber?: Array<number>;
+};
+
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/ModelWithBooleanNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model with one boolean property
+ */
+export type ModelWithBooleanNest = {
+    /**
+     * This is a simple boolean property
+     */
+    prop?: boolean;
+};
+
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/ModelWithCircularReferenceNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model with one property containing a circular reference
+ */
+export type ModelWithCircularReferenceNest = {
+    prop?: ModelWithCircularReferenceNest;
+};
+
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/ModelWithDictionaryNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model with one property containing a dictionary
+ */
+export type ModelWithDictionaryNest = {
+    prop?: Record<string, string>;
+};
+
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/ModelWithDuplicateImportsNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithStringNest } from './ModelWithStringNest';
+
+// interface
+/**
+ * This is a model with duplicated imports
+ */
+export type ModelWithDuplicateImportsNest = {
+    propA?: ModelWithStringNest;
+    propB?: ModelWithStringNest;
+    propC?: ModelWithStringNest;
+};
+
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/ModelWithDuplicatePropertiesNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithStringNest } from './ModelWithStringNest';
+
+// interface
+/**
+ * This is a model with duplicated properties
+ */
+export type ModelWithDuplicatePropertiesNest = {
+    prop?: ModelWithStringNest;
+};
+
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/ModelWithEnumFromDescriptionNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model with one enum
+ */
+export type ModelWithEnumFromDescriptionNest = {
+    /**
+     * Success=1,Warning=2,Error=3
+     */
+    test?: number;
+};
+
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/ModelWithEnumNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model with one enum
+ */
+export type ModelWithEnumNest = {
+    /**
+     * This is a simple enum with strings
+     */
+    test?: ModelWithEnumNest.test;
+    /**
+     * These are the HTTP error code enums
+     */
+    statusCode?: ModelWithEnumNest.statusCode;
+    /**
+     * Simple boolean enum
+     */
+    bool?: boolean;
+};
+
+export namespace ModelWithEnumNest {
+
+    /**
+     * This is a simple enum with strings
+     */
+    export enum test {
+        SUCCESS = 'Success',
+        WARNING = 'Warning',
+        ERROR = 'Error',
+    }
+
+    /**
+     * These are the HTTP error code enums
+     */
+    export enum statusCode {
+        _100 = '100',
+        _200_FOO = '200 FOO',
+        _300_FOO_BAR = '300 FOO_BAR',
+        _400_FOO_BAR = '400 foo-bar',
+        _500_FOO_BAR = '500 foo.bar',
+        _600_FOO_BAR = '600 foo&bar',
+    }
+
+
+}
+
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/ModelWithIntegerNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model with one number property
+ */
+export type ModelWithIntegerNest = {
+    /**
+     * This is a simple number property
+     */
+    prop?: number;
+};
+
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/ModelWithNestedEnumsNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model with nested enums
+ */
+export type ModelWithNestedEnumsNest = {
+    dictionaryWithEnum?: Record<string, 'Success' | 'Warning' | 'Error'>;
+    dictionaryWithEnumFromDescription?: Record<string, number>;
+    arrayWithEnum?: Array<'Success' | 'Warning' | 'Error'>;
+    arrayWithDescription?: Array<number>;
+};
+
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/ModelWithNestedPropertiesNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model with one nested property
+ */
+export type ModelWithNestedPropertiesNest = {
+    readonly first: {
+        readonly second: {
+            readonly third: string;
+        };
+    };
+};
+
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/ModelWithNullableStringNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model with one string property
+ */
+export type ModelWithNullableStringNest = {
+    /**
+     * This is a simple string property
+     */
+    nullableProp?: string | null;
+    /**
+     * This is a simple string property
+     */
+    nullableRequiredProp: string | null;
+};
+
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/ModelWithOrderedPropertiesNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model with ordered properties
+ */
+export type ModelWithOrderedPropertiesNest = {
+    zebra?: string;
+    apple?: string;
+    hawaii?: string;
+};
+
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/ModelWithPatternNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model that contains a some patterns
+ */
+export type ModelWithPatternNest = {
+    key: string;
+    name: string;
+    readonly enabled?: boolean;
+    readonly modified?: string;
+    id?: string;
+    text?: string;
+};
+
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/ModelWithPropertiesNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithStringNest } from './ModelWithStringNest';
+
+// interface
+/**
+ * This is a model with one nested property
+ */
+export type ModelWithPropertiesNest = {
+    required: string;
+    readonly requiredAndReadOnly: string;
+    string?: string;
+    number?: number;
+    boolean?: boolean;
+    reference?: ModelWithStringNest;
+    'property with space'?: string;
+    default?: string;
+    try?: string;
+    readonly '@namespace.string'?: string;
+    readonly '@namespace.integer'?: number;
+};
+
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/ModelWithReferenceNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithPropertiesNest } from './ModelWithPropertiesNest';
+
+// interface
+/**
+ * This is a model with one property containing a reference
+ */
+export type ModelWithReferenceNest = {
+    prop?: ModelWithPropertiesNest;
+};
+
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/ModelWithStringNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model with one string property
+ */
+export type ModelWithStringNest = {
+    /**
+     * This is a simple string property
+     */
+    prop?: string;
+};
+
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/SimpleBooleanNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a simple boolean
+ */
+export type SimpleBooleanNest = boolean;
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/SimpleFileNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a simple file
+ */
+export type SimpleFileNest = Blob;
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/SimpleIntegerNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a simple number
+ */
+export type SimpleIntegerNest = number;
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/SimpleReferenceNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithStringNest } from './ModelWithStringNest';
+
+// ELSE EXPORT TYPE
+/**
+ * This is a simple reference
+ */
+export type SimpleReferenceNest = ModelWithStringNest;
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/SimpleStringNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a simple string
+ */
+export type SimpleStringNest = string;
+"
+`;
+
+exports[`v2 should generate: ./test/generated/v2/dto/SimpleStringWithPatternNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a simple string
+ */
+export type SimpleStringWithPatternNest = string;
+"
+`;
+
 exports[`v2 should generate: ./test/generated/v2/index.ts 1`] = `
 "/* istanbul ignore file */
 /* tslint:disable */
@@ -567,9 +1432,9 @@ export type { DictionaryWithProperties } from './models/DictionaryWithProperties
 export type { DictionaryWithReference } from './models/DictionaryWithReference';
 export type { DictionaryWithString } from './models/DictionaryWithString';
 export type { EnumFromDescription } from './models/EnumFromDescription';
-export { EnumWithExtensions } from './models/EnumWithExtensions';
-export { EnumWithNumbers } from './models/EnumWithNumbers';
-export { EnumWithStrings } from './models/EnumWithStrings';
+export { EnumWithExtensions, descrEnumWithExtensions } from './models/EnumWithExtensions';
+export { EnumWithNumbers, descrEnumWithNumbers } from './models/EnumWithNumbers';
+export { EnumWithStrings, descrEnumWithStrings } from './models/EnumWithStrings';
 export type { ModelThatExtends } from './models/ModelThatExtends';
 export type { ModelThatExtendsExtends } from './models/ModelThatExtendsExtends';
 export type { ModelWithArray } from './models/ModelWithArray';
@@ -595,6 +1460,53 @@ export type { SimpleInteger } from './models/SimpleInteger';
 export type { SimpleReference } from './models/SimpleReference';
 export type { SimpleString } from './models/SimpleString';
 export type { SimpleStringWithPattern } from './models/SimpleStringWithPattern';
+
+// Nest Dto for Implements
+export type { ArrayWithArrayNest } from './dto/ArrayWithArrayNest';
+export type { ArrayWithBooleansNest } from './dto/ArrayWithBooleansNest';
+export type { ArrayWithNumbersNest } from './dto/ArrayWithNumbersNest';
+export type { ArrayWithPropertiesNest } from './dto/ArrayWithPropertiesNest';
+export type { ArrayWithReferencesNest } from './dto/ArrayWithReferencesNest';
+export type { ArrayWithStringsNest } from './dto/ArrayWithStringsNest';
+export type { CommentWithBackticksNest } from './dto/CommentWithBackticksNest';
+export type { CommentWithBreaksNest } from './dto/CommentWithBreaksNest';
+export type { CommentWithExpressionPlaceholdersNest } from './dto/CommentWithExpressionPlaceholdersNest';
+export type { CommentWithQuotesNest } from './dto/CommentWithQuotesNest';
+export type { CommentWithReservedCharactersNest } from './dto/CommentWithReservedCharactersNest';
+export type { CommentWithSlashesNest } from './dto/CommentWithSlashesNest';
+export type { DateNest } from './dto/DateNest';
+export type { DictionaryWithArrayNest } from './dto/DictionaryWithArrayNest';
+export type { DictionaryWithDictionaryNest } from './dto/DictionaryWithDictionaryNest';
+export type { DictionaryWithPropertiesNest } from './dto/DictionaryWithPropertiesNest';
+export type { DictionaryWithReferenceNest } from './dto/DictionaryWithReferenceNest';
+export type { DictionaryWithStringNest } from './dto/DictionaryWithStringNest';
+export type { EnumFromDescriptionNest } from './dto/EnumFromDescriptionNest';
+export type { ModelThatExtendsNest } from './dto/ModelThatExtendsNest';
+export type { ModelThatExtendsExtendsNest } from './dto/ModelThatExtendsExtendsNest';
+export type { ModelWithArrayNest } from './dto/ModelWithArrayNest';
+export type { ModelWithBooleanNest } from './dto/ModelWithBooleanNest';
+export type { ModelWithCircularReferenceNest } from './dto/ModelWithCircularReferenceNest';
+export type { ModelWithDictionaryNest } from './dto/ModelWithDictionaryNest';
+export type { ModelWithDuplicateImportsNest } from './dto/ModelWithDuplicateImportsNest';
+export type { ModelWithDuplicatePropertiesNest } from './dto/ModelWithDuplicatePropertiesNest';
+export { ModelWithEnumNest } from './dto/ModelWithEnumNest';
+export type { ModelWithEnumFromDescriptionNest } from './dto/ModelWithEnumFromDescriptionNest';
+export type { ModelWithIntegerNest } from './dto/ModelWithIntegerNest';
+export type { ModelWithNestedEnumsNest } from './dto/ModelWithNestedEnumsNest';
+export type { ModelWithNestedPropertiesNest } from './dto/ModelWithNestedPropertiesNest';
+export type { ModelWithNullableStringNest } from './dto/ModelWithNullableStringNest';
+export type { ModelWithOrderedPropertiesNest } from './dto/ModelWithOrderedPropertiesNest';
+export type { ModelWithPatternNest } from './dto/ModelWithPatternNest';
+export type { ModelWithPropertiesNest } from './dto/ModelWithPropertiesNest';
+export type { ModelWithReferenceNest } from './dto/ModelWithReferenceNest';
+export type { ModelWithStringNest } from './dto/ModelWithStringNest';
+export type { SimpleBooleanNest } from './dto/SimpleBooleanNest';
+export type { SimpleFileNest } from './dto/SimpleFileNest';
+export type { SimpleIntegerNest } from './dto/SimpleIntegerNest';
+export type { SimpleReferenceNest } from './dto/SimpleReferenceNest';
+export type { SimpleStringNest } from './dto/SimpleStringNest';
+export type { SimpleStringWithPatternNest } from './dto/SimpleStringWithPatternNest';
+
 
 export { $ArrayWithArray } from './schemas/$ArrayWithArray';
 export { $ArrayWithBooleans } from './schemas/$ArrayWithBooleans';
@@ -930,6 +1842,25 @@ export enum EnumWithExtensions {
      */
     CUSTOM_ERROR = 500,
 }
+
+/**
+ * Возвращает описание для элемента enum
+ * This is a simple enum with numbers
+ * @param {EnumWithExtensions} val Значение из EnumWithExtensions
+ * @return {string} описание для значения
+ */
+export const descrEnumWithExtensions = (val: EnumWithExtensions):string => {
+    switch (val) {
+        case 200:
+        return 'Used when the status of something is successful'
+        case 400:
+        return 'Used when the status of something has a warning'
+        case 500:
+        return 'Used when the status of something has an error'
+        default:
+        return ''
+    }
+}
 "
 `;
 
@@ -958,6 +1889,19 @@ export enum EnumWithNumbers {
     '_-1.2' = -1.2,
     '_-1.3' = -1.3,
 }
+
+/**
+ * Возвращает описание для элемента enum
+ * This is a simple enum with numbers
+ * @param {EnumWithNumbers} val Значение из EnumWithNumbers
+ * @return {string} описание для значения
+ */
+export const descrEnumWithNumbers = (val: EnumWithNumbers):string => {
+    switch (val) {
+        default:
+        return ''
+    }
+}
 "
 `;
 
@@ -975,6 +1919,19 @@ export enum EnumWithStrings {
     ERROR = 'Error',
     _SINGLE_QUOTE_ = '\\\\'Single Quote\\\\'',
     _DOUBLE_QUOTES_ = '\\"Double Quotes\\"',
+}
+
+/**
+ * Возвращает описание для элемента enum
+ * This is a simple enum with strings
+ * @param {EnumWithStrings} val Значение из EnumWithStrings
+ * @return {string} описание для значения
+ */
+export const descrEnumWithStrings = (val: EnumWithStrings):string => {
+    switch (val) {
+        default:
+        return ''
+    }
 }
 "
 `;
@@ -3598,6 +4555,1322 @@ export const request = <T>(config: OpenAPIConfig, options: ApiRequestOptions): C
 "
 `;
 
+exports[`v3 should generate: ./test/generated/v3/dto/ArrayWithArrayNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithStringNest } from './ModelWithStringNest';
+
+// ELSE EXPORT TYPE
+/**
+ * This is a simple array containing an array
+ */
+export type ArrayWithArrayNest = Array<Array<ModelWithString>>;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ArrayWithBooleansNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a simple array with booleans
+ */
+export type ArrayWithBooleansNest = Array<boolean>;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ArrayWithNumbersNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a simple array with numbers
+ */
+export type ArrayWithNumbersNest = Array<number>;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ArrayWithPropertiesNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a simple array with properties
+ */
+export type ArrayWithPropertiesNest = Array<{
+    foo?: string;
+    bar?: string;
+}>;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ArrayWithReferencesNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithStringNest } from './ModelWithStringNest';
+
+// ELSE EXPORT TYPE
+/**
+ * This is a simple array with references
+ */
+export type ArrayWithReferencesNest = Array<ModelWithStringNest>;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ArrayWithStringsNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a simple array with strings
+ */
+export type ArrayWithStringsNest = Array<string>;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/CommentWithBackticksNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * Testing backticks in string: \`backticks\` and \`\`\`multiple backticks\`\`\` should work
+ */
+export type CommentWithBackticksNest = number;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/CommentWithBreaksNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * Testing multiline comments in string: First line
+ * Second line
+ *
+ * Fourth line
+ */
+export type CommentWithBreaksNest = number;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/CommentWithExpressionPlaceholdersNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * Testing expression placeholders in string: \${expression} should work
+ */
+export type CommentWithExpressionPlaceholdersNest = number;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/CommentWithQuotesNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * Testing quotes in string: 'single quote''' and \\"double quotes\\"\\"\\" should work
+ */
+export type CommentWithQuotesNest = number;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/CommentWithReservedCharactersNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * Testing reserved characters in string: * inline * and ** inline ** should work
+ */
+export type CommentWithReservedCharactersNest = number;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/CommentWithSlashesNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * Testing slashes in string: \\\\backwards\\\\\\\\\\\\ and /forwards/// should work
+ */
+export type CommentWithSlashesNest = number;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/CompositionBaseModelNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a base model with two simple optional properties
+ */
+export type CompositionBaseModelNest = {
+    firstName?: string;
+    lastname?: string;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/CompositionExtendedModelNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { CompositionBaseModelNest } from './CompositionBaseModelNest';
+
+// all-of
+/**
+ * This is a model that extends the base model
+ */
+export type CompositionExtendedModelNest = (CompositionBaseModelNest & {
+    firstName: string;
+    lastname: string;
+    age: number;
+});
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/CompositionWithAllOfAndNullableNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithArrayNest } from './ModelWithArrayNest';
+import type { ModelWithDictionaryNest } from './ModelWithDictionaryNest';
+import type { ModelWithEnumNest } from './ModelWithEnumNest';
+
+// interface
+/**
+ * This is a model with one property with a 'all of' relationship
+ */
+export type CompositionWithAllOfAndNullableNest = {
+    propA?: ({
+        boolean?: boolean;
+    } & ModelWithEnumNest & ModelWithArrayNest & ModelWithDictionaryNest) | null;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/CompositionWithAnyOfAndNullableNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithArrayNest } from './ModelWithArrayNest';
+import type { ModelWithDictionaryNest } from './ModelWithDictionaryNest';
+import type { ModelWithEnumNest } from './ModelWithEnumNest';
+
+// interface
+/**
+ * This is a model with one property with a 'any of' relationship
+ */
+export type CompositionWithAnyOfAndNullableNest = {
+    propA?: ({
+        boolean?: boolean;
+    } | ModelWithEnumNest | ModelWithArrayNest | ModelWithDictionaryNest) | null;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/CompositionWithAnyOfAnonymousNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model with one property with a 'any of' relationship where the options are not $ref
+ */
+export type CompositionWithAnyOfAnonymousNest = {
+    propA?: ({
+        propA?: string;
+    } | string | number);
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/CompositionWithAnyOfNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithArrayNest } from './ModelWithArrayNest';
+import type { ModelWithDictionaryNest } from './ModelWithDictionaryNest';
+import type { ModelWithEnumNest } from './ModelWithEnumNest';
+import type { ModelWithStringNest } from './ModelWithStringNest';
+
+// interface
+/**
+ * This is a model with one property with a 'any of' relationship
+ */
+export type CompositionWithAnyOfNest = {
+    propA?: (ModelWithStringNest | ModelWithEnumNest | ModelWithArrayNest | ModelWithDictionaryNest);
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/CompositionWithOneOfAndComplexArrayDictionaryNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model that contains a dictionary of complex arrays (composited) within composition
+ */
+export type CompositionWithOneOfAndComplexArrayDictionaryNest = {
+    propA?: (boolean | Record<string, Array<(number | string)>>);
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/CompositionWithOneOfAndNullableNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithArrayNest } from './ModelWithArrayNest';
+import type { ModelWithDictionaryNest } from './ModelWithDictionaryNest';
+import type { ModelWithEnumNest } from './ModelWithEnumNest';
+
+// interface
+/**
+ * This is a model with one property with a 'one of' relationship
+ */
+export type CompositionWithOneOfAndNullableNest = {
+    propA?: ({
+        boolean?: boolean;
+    } | ModelWithEnumNest | ModelWithArrayNest | ModelWithDictionaryNest) | null;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/CompositionWithOneOfAndSimpleArrayDictionaryNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model that contains a dictionary of simple arrays within composition
+ */
+export type CompositionWithOneOfAndSimpleArrayDictionaryNest = {
+    propA?: (boolean | Record<string, Array<boolean>>);
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/CompositionWithOneOfAndSimpleDictionaryNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model that contains a simple dictionary within composition
+ */
+export type CompositionWithOneOfAndSimpleDictionaryNest = {
+    propA?: (boolean | Record<string, number>);
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/CompositionWithOneOfAnonymousNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model with one property with a 'one of' relationship where the options are not $ref
+ */
+export type CompositionWithOneOfAnonymousNest = {
+    propA?: ({
+        propA?: string;
+    } | string | number);
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/CompositionWithOneOfDiscriminatorNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelCircleNest } from './ModelCircleNest';
+import type { ModelSquareNest } from './ModelSquareNest';
+
+// one-of
+/**
+ * This is a model with one property with a 'one of' relationship where the options are not $ref
+ */
+export type CompositionWithOneOfDiscriminatorNest = (ModelCircleNest | ModelSquareNest);
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/CompositionWithOneOfNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithArrayNest } from './ModelWithArrayNest';
+import type { ModelWithDictionaryNest } from './ModelWithDictionaryNest';
+import type { ModelWithEnumNest } from './ModelWithEnumNest';
+import type { ModelWithStringNest } from './ModelWithStringNest';
+
+// interface
+/**
+ * This is a model with one property with a 'one of' relationship
+ */
+export type CompositionWithOneOfNest = {
+    propA?: (ModelWithStringNest | ModelWithEnumNest | ModelWithArrayNest | ModelWithDictionaryNest);
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/CustomPredefinedNestFieldsNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { DateISONest } from './DateISONest';
+import type { MongoObjectIdNest } from './MongoObjectIdNest';
+
+// interface
+/**
+ * This is a simple reference
+ */
+export type CustomPredefinedNestFieldsNest = {
+    id?: MongoObjectIdNest;
+    date?: DateISONest;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/DateISONest.ts 1`] = `
+"
+          export type DateISONest = Date;
+          "
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/DeprecatedModelNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a deprecated model with a deprecated property
+ * @deprecated
+ */
+export type DeprecatedModelNest = {
+    /**
+     * This is a deprecated property
+     * @deprecated
+     */
+    prop?: string;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/DictionaryWithArrayNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithStringNest } from './ModelWithStringNest';
+
+// ELSE EXPORT TYPE
+/**
+ * This is a complex dictionary
+ */
+export type DictionaryWithArrayNest = Record<string, Array<ModelWithString>>;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/DictionaryWithDictionaryNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a string dictionary
+ */
+export type DictionaryWithDictionaryNest = Record<string, Record<string, string>>;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/DictionaryWithPropertiesNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a complex dictionary
+ */
+export type DictionaryWithPropertiesNest = Record<string, {
+    foo?: string;
+    bar?: string;
+}>;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/DictionaryWithReferenceNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithStringNest } from './ModelWithStringNest';
+
+// ELSE EXPORT TYPE
+/**
+ * This is a string reference
+ */
+export type DictionaryWithReferenceNest = Record<string, ModelWithStringNest>;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/DictionaryWithStringNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a string dictionary
+ */
+export type DictionaryWithStringNest = Record<string, string>;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/EnumFromDescriptionNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * Success=1,Warning=2,Error=3
+ */
+export type EnumFromDescriptionNest = number;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/EnumViaOneOfNumericNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+/**
+ * OpenApi 3.1 style numeric enum
+ */
+export enum EnumViaOneOfNumericNest {
+    /**
+     * Success
+     */
+    SUCCESS = 0,
+    /**
+     * Warning
+     */
+    WARNING = 1,
+    /**
+     * Error
+     */
+    ERROR = 3,
+}
+
+/**
+ * Возвращает описание для элемента enum
+ * OpenApi 3.1 style numeric enum
+ * @param {EnumViaOneOfNumericNest} val Значение из EnumViaOneOfNumericNest
+ * @return {string} описание для значения
+ */
+export const descrEnumViaOneOfNumericNest = (val: EnumViaOneOfNumericNest):string => {
+    switch (val) {
+        case 0:
+        return 'Success'
+        case 1:
+        return 'Warning'
+        case 3:
+        return 'Error'
+        default:
+        return ''
+    }
+}
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/EnumViaOneOfStringNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+/**
+ * OpenApi 3.1 style titled enum
+ */
+export enum EnumViaOneOfStringNest {
+    /**
+     * Success
+     */
+    SUCCESS = 'SUCCESS',
+    /**
+     * Warning
+     */
+    SUCCESS_NOT = 'SUCCESS_NOT',
+    /**
+     * Error
+     */
+    ERROR = 'ERROR',
+}
+
+/**
+ * Возвращает описание для элемента enum
+ * OpenApi 3.1 style titled enum
+ * @param {EnumViaOneOfStringNest} val Значение из EnumViaOneOfStringNest
+ * @return {string} описание для значения
+ */
+export const descrEnumViaOneOfStringNest = (val: EnumViaOneOfStringNest):string => {
+    switch (val) {
+        case 'SUCCESS':
+        return 'Success'
+        case 'SUCCESS_NOT':
+        return 'Warning'
+        case 'ERROR':
+        return 'Error'
+        default:
+        return ''
+    }
+}
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/EnumWithExtensionsNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+/**
+ * This is a simple enum with numbers
+ */
+export enum EnumWithExtensionsNest {
+    /**
+     * Used when the status of something is successful
+     */
+    CUSTOM_SUCCESS = 200,
+    /**
+     * Used when the status of something has a warning
+     */
+    CUSTOM_WARNING = 400,
+    /**
+     * Used when the status of something has an error
+     */
+    CUSTOM_ERROR = 500,
+}
+
+/**
+ * Возвращает описание для элемента enum
+ * This is a simple enum with numbers
+ * @param {EnumWithExtensionsNest} val Значение из EnumWithExtensionsNest
+ * @return {string} описание для значения
+ */
+export const descrEnumWithExtensionsNest = (val: EnumWithExtensionsNest):string => {
+    switch (val) {
+        case 200:
+        return 'Used when the status of something is successful'
+        case 400:
+        return 'Used when the status of something has a warning'
+        case 500:
+        return 'Used when the status of something has an error'
+        default:
+        return ''
+    }
+}
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/EnumWithNumbersNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+/**
+ * This is a simple enum with numbers
+ */
+export enum EnumWithNumbersNest {
+    '_0' = 0,
+    '_1' = 1,
+    '_2' = 2,
+    '_3' = 3,
+    '_1.1' = 1.1,
+    '_1.2' = 1.2,
+    '_1.3' = 1.3,
+    '_100' = 100,
+    '_200' = 200,
+    '_300' = 300,
+    '_-100' = -100,
+    '_-200' = -200,
+    '_-300' = -300,
+    '_-1.1' = -1.1,
+    '_-1.2' = -1.2,
+    '_-1.3' = -1.3,
+}
+
+/**
+ * Возвращает описание для элемента enum
+ * This is a simple enum with numbers
+ * @param {EnumWithNumbersNest} val Значение из EnumWithNumbersNest
+ * @return {string} описание для значения
+ */
+export const descrEnumWithNumbersNest = (val: EnumWithNumbersNest):string => {
+    switch (val) {
+        default:
+        return ''
+    }
+}
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/EnumWithStringsNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+/**
+ * This is a simple enum with strings
+ */
+export enum EnumWithStringsNest {
+    SUCCESS = 'Success',
+    WARNING = 'Warning',
+    ERROR = 'Error',
+    _SINGLE_QUOTE_ = '\\\\'Single Quote\\\\'',
+    _DOUBLE_QUOTES_ = '\\"Double Quotes\\"',
+}
+
+/**
+ * Возвращает описание для элемента enum
+ * This is a simple enum with strings
+ * @param {EnumWithStringsNest} val Значение из EnumWithStringsNest
+ * @return {string} описание для значения
+ */
+export const descrEnumWithStringsNest = (val: EnumWithStringsNest):string => {
+    switch (val) {
+        default:
+        return ''
+    }
+}
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/FileNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+export type FileNest = {
+    readonly id?: string;
+    readonly updated_at?: string;
+    readonly created_at?: string;
+    mime: string;
+    readonly file?: string;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ModelCircleNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * Circle
+ */
+export type ModelCircleNest = {
+    kind: 'circle'Nest;
+    radius?: number;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ModelSquareNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * Square
+ */
+export type ModelSquareNest = {
+    kind: 'square'Nest;
+    sideLength?: number;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ModelThatExtendsExtendsNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelThatExtendsNest } from './ModelThatExtendsNest';
+import type { ModelWithStringNest } from './ModelWithStringNest';
+
+// all-of
+/**
+ * This is a model that extends another model
+ */
+export type ModelThatExtendsExtendsNest = (ModelWithStringNest & ModelThatExtendsNest & {
+    propExtendsC?: string;
+    propExtendsD?: ModelWithStringNest;
+});
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ModelThatExtendsNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithStringNest } from './ModelWithStringNest';
+
+// all-of
+/**
+ * This is a model that extends another model
+ */
+export type ModelThatExtendsNest = (ModelWithStringNest & {
+    propExtendsA?: string;
+    propExtendsB?: ModelWithStringNest;
+});
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ModelWithArrayNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithStringNest } from './ModelWithStringNest';
+
+// interface
+/**
+ * This is a model with one property containing an array
+ */
+export type ModelWithArrayNest = {
+    prop?: Array<ModelWithStringNest>;
+    propWithFile?: Array<Blob>;
+    propWithNumber?: Array<number>;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ModelWithBooleanNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model with one boolean property
+ */
+export type ModelWithBooleanNest = {
+    /**
+     * This is a simple boolean property
+     */
+    prop?: boolean;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ModelWithCircularReferenceNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model with one property containing a circular reference
+ */
+export type ModelWithCircularReferenceNest = {
+    prop?: ModelWithCircularReferenceNest;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ModelWithDictionaryNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model with one property containing a dictionary
+ */
+export type ModelWithDictionaryNest = {
+    prop?: Record<string, string>;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ModelWithDuplicateImportsNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithStringNest } from './ModelWithStringNest';
+
+// interface
+/**
+ * This is a model with duplicated imports
+ */
+export type ModelWithDuplicateImportsNest = {
+    propA?: ModelWithStringNest;
+    propB?: ModelWithStringNest;
+    propC?: ModelWithStringNest;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ModelWithDuplicatePropertiesNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithStringNest } from './ModelWithStringNest';
+
+// interface
+/**
+ * This is a model with duplicated properties
+ */
+export type ModelWithDuplicatePropertiesNest = {
+    prop?: ModelWithStringNest;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ModelWithEnumFromDescriptionNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model with one enum
+ */
+export type ModelWithEnumFromDescriptionNest = {
+    /**
+     * Success=1,Warning=2,Error=3
+     */
+    test?: number;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ModelWithEnumNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model with one enum
+ */
+export type ModelWithEnumNest = {
+    /**
+     * This is a simple enum with strings
+     */
+    test?: ModelWithEnumNest.test;
+    /**
+     * These are the HTTP error code enums
+     */
+    statusCode?: ModelWithEnumNest.statusCode;
+    /**
+     * Simple boolean enum
+     */
+    bool?: boolean;
+};
+
+export namespace ModelWithEnumNest {
+
+    /**
+     * This is a simple enum with strings
+     */
+    export enum test {
+        SUCCESS = 'Success',
+        WARNING = 'Warning',
+        ERROR = 'Error',
+    }
+
+    /**
+     * These are the HTTP error code enums
+     */
+    export enum statusCode {
+        _100 = '100',
+        _200_FOO = '200 FOO',
+        _300_FOO_BAR = '300 FOO_BAR',
+        _400_FOO_BAR = '400 foo-bar',
+        _500_FOO_BAR = '500 foo.bar',
+        _600_FOO_BAR = '600 foo&bar',
+    }
+
+
+}
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ModelWithIntegerNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model with one number property
+ */
+export type ModelWithIntegerNest = {
+    /**
+     * This is a simple number property
+     */
+    prop?: number;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ModelWithNestedEnumsNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model with nested enums
+ */
+export type ModelWithNestedEnumsNest = {
+    dictionaryWithEnum?: Record<string, 'Success' | 'Warning' | 'Error'>;
+    dictionaryWithEnumFromDescription?: Record<string, number>;
+    arrayWithEnum?: Array<'Success' | 'Warning' | 'Error'>;
+    arrayWithDescription?: Array<number>;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ModelWithNestedPropertiesNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model with one nested property
+ */
+export type ModelWithNestedPropertiesNest = {
+    readonly first: {
+        readonly second: {
+            readonly third: string | null;
+        } | null;
+    } | null;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ModelWithNullableStringNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model with one string property
+ */
+export type ModelWithNullableStringNest = {
+    /**
+     * This is a simple string property
+     */
+    nullableProp1?: string | null;
+    /**
+     * This is a simple string property
+     */
+    nullableRequiredProp1: string | null;
+    /**
+     * This is a simple string property
+     */
+    nullableProp2?: string | null;
+    /**
+     * This is a simple string property
+     */
+    nullableRequiredProp2: string | null;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ModelWithOrderedPropertiesNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model with ordered properties
+ */
+export type ModelWithOrderedPropertiesNest = {
+    zebra?: string;
+    apple?: string;
+    hawaii?: string;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ModelWithPatternNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model that contains a some patterns
+ */
+export type ModelWithPatternNest = {
+    key: string;
+    name: string;
+    readonly enabled?: boolean;
+    readonly modified?: string;
+    id?: string;
+    text?: string;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ModelWithPropertiesNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithStringNest } from './ModelWithStringNest';
+
+// interface
+/**
+ * This is a model with one nested property
+ */
+export type ModelWithPropertiesNest = {
+    required: string;
+    readonly requiredAndReadOnly: string;
+    requiredAndNullable: string | null;
+    string?: string;
+    number?: number;
+    boolean?: boolean;
+    reference?: ModelWithStringNest;
+    'property with space'?: string;
+    default?: string;
+    try?: string;
+    readonly '@namespace.string'?: string;
+    readonly '@namespace.integer'?: number;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ModelWithReferenceNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithPropertiesNest } from './ModelWithPropertiesNest';
+
+// interface
+/**
+ * This is a model with one property containing a reference
+ */
+export type ModelWithReferenceNest = {
+    prop?: ModelWithPropertiesNest;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/ModelWithStringNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+/**
+ * This is a model with one string property
+ */
+export type ModelWithStringNest = {
+    /**
+     * This is a simple string property
+     */
+    prop?: string;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/MongoObjectIdNest.ts 1`] = `
+"
+          import { Types } from 'mongoose'
+          export type MongoObjectIdNest = Types.ObjectId;
+          "
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/PageableNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// interface
+export type PageableNest = {
+    page?: number;
+    size?: number;
+    sort?: Array<string>;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/SimpleBooleanNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a simple boolean
+ */
+export type SimpleBooleanNest = boolean;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/SimpleFileNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a simple file
+ */
+export type SimpleFileNest = Blob;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/SimpleIntegerNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a simple number
+ */
+export type SimpleIntegerNest = number;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/SimpleReferenceNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { ModelWithStringNest } from './ModelWithStringNest';
+
+// ELSE EXPORT TYPE
+/**
+ * This is a simple reference
+ */
+export type SimpleReferenceNest = ModelWithStringNest;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/SimpleStringNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a simple string
+ */
+export type SimpleStringNest = string;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/dto/SimpleStringWithPatternNest.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+// ELSE EXPORT TYPE
+/**
+ * This is a simple string
+ */
+export type SimpleStringWithPatternNest = string | null;
+"
+`;
+
 exports[`v3 should generate: ./test/generated/v3/index.ts 1`] = `
 "/* istanbul ignore file */
 /* tslint:disable */
@@ -3632,6 +5905,8 @@ export type { CompositionWithOneOfAndSimpleArrayDictionary } from './models/Comp
 export type { CompositionWithOneOfAndSimpleDictionary } from './models/CompositionWithOneOfAndSimpleDictionary';
 export type { CompositionWithOneOfAnonymous } from './models/CompositionWithOneOfAnonymous';
 export type { CompositionWithOneOfDiscriminator } from './models/CompositionWithOneOfDiscriminator';
+export type { CustomPredefinedNestFields } from './models/CustomPredefinedNestFields';
+export type { DateISO } from './models/DateISO';
 export type { DeprecatedModel } from './models/DeprecatedModel';
 export type { DictionaryWithArray } from './models/DictionaryWithArray';
 export type { DictionaryWithDictionary } from './models/DictionaryWithDictionary';
@@ -3639,11 +5914,11 @@ export type { DictionaryWithProperties } from './models/DictionaryWithProperties
 export type { DictionaryWithReference } from './models/DictionaryWithReference';
 export type { DictionaryWithString } from './models/DictionaryWithString';
 export type { EnumFromDescription } from './models/EnumFromDescription';
-export { EnumViaOneOfNumeric } from './models/EnumViaOneOfNumeric';
-export { EnumViaOneOfString } from './models/EnumViaOneOfString';
-export { EnumWithExtensions } from './models/EnumWithExtensions';
-export { EnumWithNumbers } from './models/EnumWithNumbers';
-export { EnumWithStrings } from './models/EnumWithStrings';
+export { EnumViaOneOfNumeric, descrEnumViaOneOfNumeric } from './models/EnumViaOneOfNumeric';
+export { EnumViaOneOfString, descrEnumViaOneOfString } from './models/EnumViaOneOfString';
+export { EnumWithExtensions, descrEnumWithExtensions } from './models/EnumWithExtensions';
+export { EnumWithNumbers, descrEnumWithNumbers } from './models/EnumWithNumbers';
+export { EnumWithStrings, descrEnumWithStrings } from './models/EnumWithStrings';
 export type { File } from './models/File';
 export type { ModelCircle } from './models/ModelCircle';
 export type { ModelSquare } from './models/ModelSquare';
@@ -3666,6 +5941,7 @@ export type { ModelWithPattern } from './models/ModelWithPattern';
 export type { ModelWithProperties } from './models/ModelWithProperties';
 export type { ModelWithReference } from './models/ModelWithReference';
 export type { ModelWithString } from './models/ModelWithString';
+export type { MongoObjectId } from './models/MongoObjectId';
 export type { Pageable } from './models/Pageable';
 export type { SimpleBoolean } from './models/SimpleBoolean';
 export type { SimpleFile } from './models/SimpleFile';
@@ -3673,6 +5949,73 @@ export type { SimpleInteger } from './models/SimpleInteger';
 export type { SimpleReference } from './models/SimpleReference';
 export type { SimpleString } from './models/SimpleString';
 export type { SimpleStringWithPattern } from './models/SimpleStringWithPattern';
+
+// Nest Dto for Implements
+export type { ArrayWithArrayNest } from './dto/ArrayWithArrayNest';
+export type { ArrayWithBooleansNest } from './dto/ArrayWithBooleansNest';
+export type { ArrayWithNumbersNest } from './dto/ArrayWithNumbersNest';
+export type { ArrayWithPropertiesNest } from './dto/ArrayWithPropertiesNest';
+export type { ArrayWithReferencesNest } from './dto/ArrayWithReferencesNest';
+export type { ArrayWithStringsNest } from './dto/ArrayWithStringsNest';
+export type { CommentWithBackticksNest } from './dto/CommentWithBackticksNest';
+export type { CommentWithBreaksNest } from './dto/CommentWithBreaksNest';
+export type { CommentWithExpressionPlaceholdersNest } from './dto/CommentWithExpressionPlaceholdersNest';
+export type { CommentWithQuotesNest } from './dto/CommentWithQuotesNest';
+export type { CommentWithReservedCharactersNest } from './dto/CommentWithReservedCharactersNest';
+export type { CommentWithSlashesNest } from './dto/CommentWithSlashesNest';
+export type { CompositionBaseModelNest } from './dto/CompositionBaseModelNest';
+export type { CompositionExtendedModelNest } from './dto/CompositionExtendedModelNest';
+export type { CompositionWithAllOfAndNullableNest } from './dto/CompositionWithAllOfAndNullableNest';
+export type { CompositionWithAnyOfNest } from './dto/CompositionWithAnyOfNest';
+export type { CompositionWithAnyOfAndNullableNest } from './dto/CompositionWithAnyOfAndNullableNest';
+export type { CompositionWithAnyOfAnonymousNest } from './dto/CompositionWithAnyOfAnonymousNest';
+export type { CompositionWithOneOfNest } from './dto/CompositionWithOneOfNest';
+export type { CompositionWithOneOfAndComplexArrayDictionaryNest } from './dto/CompositionWithOneOfAndComplexArrayDictionaryNest';
+export type { CompositionWithOneOfAndNullableNest } from './dto/CompositionWithOneOfAndNullableNest';
+export type { CompositionWithOneOfAndSimpleArrayDictionaryNest } from './dto/CompositionWithOneOfAndSimpleArrayDictionaryNest';
+export type { CompositionWithOneOfAndSimpleDictionaryNest } from './dto/CompositionWithOneOfAndSimpleDictionaryNest';
+export type { CompositionWithOneOfAnonymousNest } from './dto/CompositionWithOneOfAnonymousNest';
+export type { CompositionWithOneOfDiscriminatorNest } from './dto/CompositionWithOneOfDiscriminatorNest';
+export type { CustomPredefinedNestFieldsNest } from './dto/CustomPredefinedNestFieldsNest';
+export type { DateISONest } from './dto/DateISONest';
+export type { DeprecatedModelNest } from './dto/DeprecatedModelNest';
+export type { DictionaryWithArrayNest } from './dto/DictionaryWithArrayNest';
+export type { DictionaryWithDictionaryNest } from './dto/DictionaryWithDictionaryNest';
+export type { DictionaryWithPropertiesNest } from './dto/DictionaryWithPropertiesNest';
+export type { DictionaryWithReferenceNest } from './dto/DictionaryWithReferenceNest';
+export type { DictionaryWithStringNest } from './dto/DictionaryWithStringNest';
+export type { EnumFromDescriptionNest } from './dto/EnumFromDescriptionNest';
+export type { FileNest } from './dto/FileNest';
+export type { ModelCircleNest } from './dto/ModelCircleNest';
+export type { ModelSquareNest } from './dto/ModelSquareNest';
+export type { ModelThatExtendsNest } from './dto/ModelThatExtendsNest';
+export type { ModelThatExtendsExtendsNest } from './dto/ModelThatExtendsExtendsNest';
+export type { ModelWithArrayNest } from './dto/ModelWithArrayNest';
+export type { ModelWithBooleanNest } from './dto/ModelWithBooleanNest';
+export type { ModelWithCircularReferenceNest } from './dto/ModelWithCircularReferenceNest';
+export type { ModelWithDictionaryNest } from './dto/ModelWithDictionaryNest';
+export type { ModelWithDuplicateImportsNest } from './dto/ModelWithDuplicateImportsNest';
+export type { ModelWithDuplicatePropertiesNest } from './dto/ModelWithDuplicatePropertiesNest';
+export { ModelWithEnumNest } from './dto/ModelWithEnumNest';
+export type { ModelWithEnumFromDescriptionNest } from './dto/ModelWithEnumFromDescriptionNest';
+export type { ModelWithIntegerNest } from './dto/ModelWithIntegerNest';
+export type { ModelWithNestedEnumsNest } from './dto/ModelWithNestedEnumsNest';
+export type { ModelWithNestedPropertiesNest } from './dto/ModelWithNestedPropertiesNest';
+export type { ModelWithNullableStringNest } from './dto/ModelWithNullableStringNest';
+export type { ModelWithOrderedPropertiesNest } from './dto/ModelWithOrderedPropertiesNest';
+export type { ModelWithPatternNest } from './dto/ModelWithPatternNest';
+export type { ModelWithPropertiesNest } from './dto/ModelWithPropertiesNest';
+export type { ModelWithReferenceNest } from './dto/ModelWithReferenceNest';
+export type { ModelWithStringNest } from './dto/ModelWithStringNest';
+export type { MongoObjectIdNest } from './dto/MongoObjectIdNest';
+export type { PageableNest } from './dto/PageableNest';
+export type { SimpleBooleanNest } from './dto/SimpleBooleanNest';
+export type { SimpleFileNest } from './dto/SimpleFileNest';
+export type { SimpleIntegerNest } from './dto/SimpleIntegerNest';
+export type { SimpleReferenceNest } from './dto/SimpleReferenceNest';
+export type { SimpleStringNest } from './dto/SimpleStringNest';
+export type { SimpleStringWithPatternNest } from './dto/SimpleStringWithPatternNest';
+
 
 export { $ArrayWithArray } from './schemas/$ArrayWithArray';
 export { $ArrayWithBooleans } from './schemas/$ArrayWithBooleans';
@@ -3699,6 +6042,8 @@ export { $CompositionWithOneOfAndSimpleArrayDictionary } from './schemas/$Compos
 export { $CompositionWithOneOfAndSimpleDictionary } from './schemas/$CompositionWithOneOfAndSimpleDictionary';
 export { $CompositionWithOneOfAnonymous } from './schemas/$CompositionWithOneOfAnonymous';
 export { $CompositionWithOneOfDiscriminator } from './schemas/$CompositionWithOneOfDiscriminator';
+export { $CustomPredefinedNestFields } from './schemas/$CustomPredefinedNestFields';
+export { $DateISO } from './schemas/$DateISO';
 export { $DeprecatedModel } from './schemas/$DeprecatedModel';
 export { $DictionaryWithArray } from './schemas/$DictionaryWithArray';
 export { $DictionaryWithDictionary } from './schemas/$DictionaryWithDictionary';
@@ -3733,6 +6078,7 @@ export { $ModelWithPattern } from './schemas/$ModelWithPattern';
 export { $ModelWithProperties } from './schemas/$ModelWithProperties';
 export { $ModelWithReference } from './schemas/$ModelWithReference';
 export { $ModelWithString } from './schemas/$ModelWithString';
+export { $MongoObjectId } from './schemas/$MongoObjectId';
 export { $Pageable } from './schemas/$Pageable';
 export { $SimpleBoolean } from './schemas/$SimpleBoolean';
 export { $SimpleFile } from './schemas/$SimpleFile';
@@ -4152,6 +6498,37 @@ export type CompositionWithOneOfDiscriminator = (ModelCircle | ModelSquare);
 "
 `;
 
+exports[`v3 should generate: ./test/generated/v3/models/CustomPredefinedNestFields.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+import type { DateISO } from './DateISO';
+import type { MongoObjectId } from './MongoObjectId';
+
+/**
+ * This is a simple reference
+ */
+export type CustomPredefinedNestFields = {
+    id?: MongoObjectId;
+    date?: DateISO;
+};
+
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/models/DateISO.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+/**
+ * Date ISO
+ */
+export type DateISO = string;
+"
+`;
+
 exports[`v3 should generate: ./test/generated/v3/models/DeprecatedModel.ts 1`] = `
 "/* istanbul ignore file */
 /* tslint:disable */
@@ -4251,32 +6628,6 @@ export type EnumFromDescription = number;
 "
 `;
 
-exports[`v3 should generate: ./test/generated/v3/models/EnumLike.ts 1`] = `
-"/* istanbul ignore file */
-/* tslint:disable */
-/* eslint-disable */
-
-/**
- * OpenApi 3.1 style numeric enum
- */
-export enum EnumLike {
-    /**
-    * Success
-    * /
-    SUCCESS = 0,
-    /**
-     * Warning
-     */
-    'WARNING' = 1,
-    /**
-     * Error
-     */
-    'ERROR' = 3,
-};
-
-"
-`;
-
 exports[`v3 should generate: ./test/generated/v3/models/EnumViaOneOfNumeric.ts 1`] = `
 "/* istanbul ignore file */
 /* tslint:disable */
@@ -4299,6 +6650,25 @@ export enum EnumViaOneOfNumeric {
      */
     ERROR = 3,
 }
+
+/**
+ * Возвращает описание для элемента enum
+ * OpenApi 3.1 style numeric enum
+ * @param {EnumViaOneOfNumeric} val Значение из EnumViaOneOfNumeric
+ * @return {string} описание для значения
+ */
+export const descrEnumViaOneOfNumeric = (val: EnumViaOneOfNumeric):string => {
+    switch (val) {
+        case 0:
+        return 'Success'
+        case 1:
+        return 'Warning'
+        case 3:
+        return 'Error'
+        default:
+        return ''
+    }
+}
 "
 `;
 
@@ -4308,7 +6678,7 @@ exports[`v3 should generate: ./test/generated/v3/models/EnumViaOneOfString.ts 1`
 /* eslint-disable */
 
 /**
- * OpenApi 3.1 style numeric enum
+ * OpenApi 3.1 style titled enum
  */
 export enum EnumViaOneOfString {
     /**
@@ -4318,11 +6688,30 @@ export enum EnumViaOneOfString {
     /**
      * Warning
      */
-    WARNING = 'SUCCESS',
+    SUCCESS_NOT = 'SUCCESS_NOT',
     /**
      * Error
      */
-    ERROR = 'SUCCESS',
+    ERROR = 'ERROR',
+}
+
+/**
+ * Возвращает описание для элемента enum
+ * OpenApi 3.1 style titled enum
+ * @param {EnumViaOneOfString} val Значение из EnumViaOneOfString
+ * @return {string} описание для значения
+ */
+export const descrEnumViaOneOfString = (val: EnumViaOneOfString):string => {
+    switch (val) {
+        case 'SUCCESS':
+        return 'Success'
+        case 'SUCCESS_NOT':
+        return 'Warning'
+        case 'ERROR':
+        return 'Error'
+        default:
+        return ''
+    }
 }
 "
 `;
@@ -4348,6 +6737,25 @@ export enum EnumWithExtensions {
      * Used when the status of something has an error
      */
     CUSTOM_ERROR = 500,
+}
+
+/**
+ * Возвращает описание для элемента enum
+ * This is a simple enum with numbers
+ * @param {EnumWithExtensions} val Значение из EnumWithExtensions
+ * @return {string} описание для значения
+ */
+export const descrEnumWithExtensions = (val: EnumWithExtensions):string => {
+    switch (val) {
+        case 200:
+        return 'Used when the status of something is successful'
+        case 400:
+        return 'Used when the status of something has a warning'
+        case 500:
+        return 'Used when the status of something has an error'
+        default:
+        return ''
+    }
 }
 "
 `;
@@ -4378,6 +6786,19 @@ export enum EnumWithNumbers {
     '_-1.2' = -1.2,
     '_-1.3' = -1.3,
 }
+
+/**
+ * Возвращает описание для элемента enum
+ * This is a simple enum with numbers
+ * @param {EnumWithNumbers} val Значение из EnumWithNumbers
+ * @return {string} описание для значения
+ */
+export const descrEnumWithNumbers = (val: EnumWithNumbers):string => {
+    switch (val) {
+        default:
+        return ''
+    }
+}
 "
 `;
 
@@ -4395,6 +6816,19 @@ export enum EnumWithStrings {
     ERROR = 'Error',
     _SINGLE_QUOTE_ = '\\\\'Single Quote\\\\'',
     _DOUBLE_QUOTES_ = '\\"Double Quotes\\"',
+}
+
+/**
+ * Возвращает описание для элемента enum
+ * This is a simple enum with strings
+ * @param {EnumWithStrings} val Значение из EnumWithStrings
+ * @return {string} описание для значения
+ */
+export const descrEnumWithStrings = (val: EnumWithStrings):string => {
+    switch (val) {
+        default:
+        return ''
+    }
 }
 "
 `;
@@ -4839,6 +7273,18 @@ export type ModelWithString = {
     prop?: string;
 };
 
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/models/MongoObjectId.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+
+/**
+ * Mongo ObjectId
+ */
+export type MongoObjectId = string;
 "
 `;
 
@@ -5419,6 +7865,35 @@ export const $CompositionWithOneOfDiscriminator = {
     }, {
         type: 'ModelSquare',
     }],
+} as const;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/schemas/$CustomPredefinedNestFields.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+export const $CustomPredefinedNestFields = {
+    description: \`This is a simple reference\`,
+    properties: {
+        id: {
+            type: 'MongoObjectId',
+        },
+        date: {
+            type: 'DateISO',
+        },
+    },
+} as const;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/schemas/$DateISO.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+export const $DateISO = {
+    type: 'string',
+    description: \`Date ISO\`,
 } as const;
 "
 `;
@@ -6117,6 +8592,17 @@ export const $ModelWithString = {
             description: \`This is a simple string property\`,
         },
     },
+} as const;
+"
+`;
+
+exports[`v3 should generate: ./test/generated/v3/schemas/$MongoObjectId.ts 1`] = `
+"/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+export const $MongoObjectId = {
+    type: 'string',
+    description: \`Mongo ObjectId\`,
 } as const;
 "
 `;

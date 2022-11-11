@@ -22,3 +22,27 @@ export enum {{{name}}} {
 	{{/containsSpaces}}
 	{{/each}}
 }
+
+/**
+ * Возвращает описание для элемента enum
+{{#if description}}
+ * {{{escapeComment description}}}
+{{/if}}
+ * @param { {{~name~}} } val Значение из {{{name}}}
+ * @return {string} описание для значения
+{{#if deprecated}}
+ * @deprecated
+{{/if}}
+ */
+export const descr{{{name}}} = (val: {{{name}}}):string => {
+  switch (val) {
+		{{#each enum}}
+			{{#if description}}
+				case {{{value}}}:
+					return '{{{description}}}'
+			{{/if}}
+		{{/each}}
+			default:
+				return ''
+	}
+}

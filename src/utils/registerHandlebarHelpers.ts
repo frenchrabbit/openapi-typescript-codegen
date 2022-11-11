@@ -28,6 +28,13 @@ export const registerHandlebarHelpers = (root: {
     );
 
     Handlebars.registerHelper(
+        'endsWith',
+        function (this: any, a: string, b: string, options: Handlebars.HelperOptions): string {
+            return a.indexOf(b, this.length - b.length) !== -1 ? options.fn(this) : options.inverse(this);
+        }
+    );
+
+    Handlebars.registerHelper(
         'notEquals',
         function (this: any, a: string, b: string, options: Handlebars.HelperOptions): string {
             return a !== b ? options.fn(this) : options.inverse(this);
@@ -37,7 +44,7 @@ export const registerHandlebarHelpers = (root: {
     Handlebars.registerHelper(
         'containsSpaces',
         function (this: any, value: string, options: Handlebars.HelperOptions): string {
-            return /\s+/.test(value) ? options.fn(this) : options.inverse(this);
+            return /[\s]+/.test(value) ? options.fn(this) : options.inverse(this);
         }
     );
 
