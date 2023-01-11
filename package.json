@@ -1,6 +1,6 @@
 {
     "name": "@frabbit/openapi-typescript-codegen",
-    "version": "0.31.8",
+    "version": "0.31.9",
     "description": "Library that generates Typescript clients based on the OpenAPI specification.",
     "author": "Ferdi Koomen",
     "homepage": "https://github.com/ferdikoomen/openapi-typescript-codegen",
