@@ -38,7 +38,7 @@
     "main": "dist/index.js",
     "types": "types/index.d.ts",
     "bin": {
-        "openapi": "bin/index.js"
+        "openapi-gents": "bin/index.js"
     },
     "files": [
         "bin/index.js",
